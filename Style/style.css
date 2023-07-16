@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+.todo-list-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.todo-header {
+    color: green;
+    text-align: center;
+}
+
+.create-todo-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.todo-input {
+    padding: 5px 10px;
+}
+
+.add-button {
+    padding: 0 20px;
+    font-size: 25px;
+    font-weight: 300;
+    background-color: dodgerblue;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.new-todo-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    width: 75%;
+}
+
+.new-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .radio-input:checked {
+    color: green;
+} */
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Input checked color change green */
+input[type="radio"]:checked {
+    background-color: green;
+}
+
+
+/* Done ToDo start */
+
+
+
+.done-header {
+    color: red;
+}
+
+.done-todo-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    width: 43%;
+}
+
+.done-todo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.done-task {
+    text-decoration: line-through;
+    color: rgba(74, 74, 74, 0.651);
+}
+
+.done-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    width: 75%;
+}
+
+.hide-done-btn {
+    background-color: darkorange;
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* for hidden div */
+
+.hidden {
+    display: none;  
+}
+
+/* Clear all button */
+
+.clear-all {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
