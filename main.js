@@ -21,8 +21,9 @@ form.addEventListener("submit", (e)=> {
         radioInput.setAttribute("type", "radio");
         radioInput.classList.add("radio-input");
         // create span 
+        localStorage.setItem("taskName", todoInput.value)
         const span = document.createElement("span");
-        span.textContent = todoInput.value;
+        span.textContent = localStorage.getItem("taskName");
         // create div
         const div = document.createElement("div")
         div.classList.add("delete-button-area");
@@ -33,7 +34,9 @@ form.addEventListener("submit", (e)=> {
         
         div.append(buttonDelete);
         listItem.append(radioInput,span,div);
+        localStorage.setItem("list", listItem);
         ulList.append(listItem);
+
 
         todoInput.value = "";
         
@@ -82,8 +85,6 @@ hideDoneBtn.addEventListener("click", (e) => {
 
 })
 
-
-
 function removeDone() {
     doneArea.classList.add("hidden");
     clearAll.parentElement.classList.add("hidden")
@@ -93,3 +94,4 @@ function showDone() {
     doneArea.classList.remove("hidden")
     clearAll.parentElement.classList.remove("hidden")
 }
+
